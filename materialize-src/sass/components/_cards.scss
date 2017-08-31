@@ -12,6 +12,7 @@
 .card {
   height: 400px;
   width: 500px;
+  padding: $card-padding;
   align-self: center;
   position: aboslute;
   margin: $element-top-margin 0 $element-bottom-margin 0;
