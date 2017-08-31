@@ -1,6 +1,5 @@
 (function ($) {
   $(document).ready(function() {
-
     // jQuery reverse
     $.fn.reverse = [].reverse;
 

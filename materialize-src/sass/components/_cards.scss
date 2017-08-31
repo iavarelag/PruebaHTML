@@ -10,13 +10,13 @@
 }
 
 .card {
-  height: 400px;
+  height: 500px;
   width: 500px;
   padding: $card-padding;
   align-self: center;
   position: aboslute;
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  background-color: $card-bg-color;
+ background-color: #ffffff;
   transition: box-shadow .25s;
   border-radius: 2px;
   @extend .z-depth-2;
