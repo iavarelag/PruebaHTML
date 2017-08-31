@@ -2527,7 +2527,8 @@ nav ul a span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%; }
+  width: 90%;
+  position: relative; }
 
 @media only screen and (min-width: 601px) {
   .container {
@@ -2552,7 +2553,9 @@ nav ul a span.badge {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  height: 500px;
+  display: block; }
   .row:after {
     content: "";
     display: table;
@@ -2560,8 +2563,8 @@ nav ul a span.badge {
   .row .col {
     float: left;
     box-sizing: border-box;
-    padding: 0 20rem;
-    min-height: 1px; }
+    padding: 15px 40rem;
+    min-height: 200px; }
     .row .col[class*="push-"], .row .col[class*="pull-"] {
       position: relative; }
     .row .col.s1 {
