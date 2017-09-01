@@ -2201,14 +2201,15 @@ ul.staggered-list li {
     text-align: center; } }
 
 .page-footer {
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 0px;
+  margin-bottom: 0px;
   color: black;
   background-color: #263238;
-  height: 200px; }
+  height: 130px; }
   .page-footer .footer-copyright {
     overflow: hidden;
-    min-height: 50px;
+    min-height: 10px;
     display: flex;
     align-items: center;
     padding: 5px 0px;
@@ -2480,6 +2481,13 @@ input[type=range] + .thumb {
 
 .no-padding {
   padding: 0 !important; }
+
+.left-footer {
+  margin-left: 15px; }
+  .left-footer table {
+    width: 25%; }
+  .left-footer td, .left-footer th {
+    padding: 3px; }
 
 span.badge {
   min-width: 3rem;

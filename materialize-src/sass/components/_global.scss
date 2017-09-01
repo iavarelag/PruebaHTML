@@ -339,13 +339,14 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 10px;
   padding-bottom: 0px;
+  margin-bottom: 0px;
   color: $footer-font-color;
   background-color: $footer-bg-color;
-  height:200px;
+  height:130px;
 
   .footer-copyright {
     overflow: hidden;
-    min-height: 50px;
+    min-height: 10px;
     display: flex;
     align-items: center;
     padding: 5px 0px;
@@ -733,4 +734,15 @@ td, th{
 
 .no-padding {
   padding: 0 !important;
+}
+
+
+.left-footer{
+  table{
+    width: 25%;
+  }
+  margin-left: 15px;
+  td, th{
+    padding: 3px;
+  }
 }
