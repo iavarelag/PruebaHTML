@@ -338,6 +338,7 @@ ul.staggered-list li {
 // Footer
 .page-footer {
   padding-top: 10px;
+  display: inline;
   padding-bottom: 0px;
   margin-bottom: 0px;
   color: $footer-font-color;
@@ -349,7 +350,7 @@ ul.staggered-list li {
     min-height: 20px;
     display: block;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-left: 50%;
     color: $footer-copyright-font-color;
     background-color: $footer-copyright-bg-color;
@@ -746,4 +747,11 @@ td, th{
   td, th{
     padding: 3px;
   }
+  i{
+
+  }
+}
+
+.IconSocial{
+
 }
