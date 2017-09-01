@@ -5,12 +5,23 @@
     <meta name="layout" />
     <title>AyudingaCORE</title>
 
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
     <style type="text/css">
+        html {
+            background: url("imgs/ACArtboard%201sitelogo2.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
         body {
             display: flex;
-            min-height: 100vh;
+            /**min-height: 100vh;**/
             flex-direction: column;
         }
         main {
@@ -20,7 +31,7 @@
 
 </head>
 
-<body background="imgs/ACArtboard%201sitelogo2.png" style="alignment: center; width: 100% ; height: 100%">
+<body class="bg" style="alignment: center;">
 <header>
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="#!">one</a></li>
@@ -47,15 +58,16 @@
                 <li><a href="!">AyudingaCore</a></li>
                 <li><a href="!">Ayudinga</a></li>
                 <li><a href="!">Iniciar Sesion</a></li>
+            </ul>
         </div>
     </nav>
     </div>
 </header>
 <div class="card">
     <i class="material-icons prefix">person</i>
-    <input id="icon_prefix" placeholder="Usuario" type="text" class="validate" >
+    <input placeholder="Usuario" type="text" class="validate icon_prefix" >
     <i class="material-icons prefix">lock_outline</i>
-    <input id="icon_prefix" placeholder="contraseña" type="text" class="validate" >
+    <input placeholder="contraseña" type="text" class="validate icon_prefix" >
     <form action="#">
         <p>
             <input type="checkbox" id="test5" />
@@ -69,9 +81,28 @@
         <p align="center"><a href="!">Registrarte como Usuario</a></p>
     </div>
 </div>
+<footer class="page-footer">
+    <div class="left">
+        <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+        </ul>
+</div>
 
+
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large white">
+            <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+</footer>
 </body>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.min.js"></script>
-
 </html>

@@ -337,17 +337,18 @@ ul.staggered-list li {
 
 // Footer
 .page-footer {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   color: $footer-font-color;
   background-color: $footer-bg-color;
-  height:120px;
+  height:200px;
 
   .footer-copyright {
     overflow: hidden;
     min-height: 50px;
     display: flex;
     align-items: center;
-    padding: 10px 0px;
+    padding: 5px 0px;
     color: $footer-copyright-font-color;
     background-color: $footer-copyright-bg-color;
     @extend .light;
