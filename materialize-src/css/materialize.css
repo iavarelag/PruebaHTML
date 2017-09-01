@@ -2210,8 +2210,8 @@ ul.staggered-list li {
   .page-footer .footer-copyright {
     overflow: hidden;
     min-height: 20px;
-    display: flex;
-    align-items: right;
+    display: block;
+    align-items: center;
     padding-top: 5px;
     padding-left: 50%;
     color: rgba(255, 255, 255, 0.8);

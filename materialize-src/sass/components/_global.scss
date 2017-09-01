@@ -347,8 +347,8 @@ ul.staggered-list li {
   .footer-copyright {
     overflow: hidden;
     min-height: 20px;
-    display: flex;
-    align-items: right;
+    display: block;
+    align-items: center;
     padding-top: 5px;
     padding-left: 50%;
     color: $footer-copyright-font-color;
