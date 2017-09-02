@@ -52,17 +52,27 @@
       right: 0;
     }
   }
-
+  &.customHeader{
+    width: 250px;
+    height: 8px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+    background-color: #5F605F;
+  }
   &.custom {
     height: 400px;
     width: 100%;
     margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #67C4AB;
   }
 
   &.small {
-    height: 200px;
+    height: 400px;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
   }
 
   &.medium {

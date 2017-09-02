@@ -1,9 +1,12 @@
 .collapsible {
+  position: relative;
+  display: inline-block;
+  width: 300px;
   border-top: 1px solid $collapsible-border-color;
   border-right: 1px solid $collapsible-border-color;
   border-left: 1px solid $collapsible-border-color;
-  margin: $element-top-margin 0 $element-bottom-margin 0;
-  @extend .z-depth-1;
+  text-align: center;
+  @extend .z-depth-3;
 }
 
 .collapsible-header {
