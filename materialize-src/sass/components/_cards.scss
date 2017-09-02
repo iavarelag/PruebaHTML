@@ -31,11 +31,11 @@
   }
 
   // Card Sizes
-  &.small, &.medium, &.large {
+  &.small, &.medium, &.large, &.custom{
     position: relative;
 
     .card-image {
-      max-height: 60%;
+      max-height: 100%;
       overflow: hidden;
     }
     .card-image + .card-content {
@@ -53,8 +53,16 @@
     }
   }
 
+  &.custom {
+    height: 400px;
+    width: 100%;
+    margin-top: 0px;
+  }
+
   &.small {
-    height: 300px;
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
   }
 
   &.medium {
@@ -72,6 +80,7 @@
         height: 100%;
         max-height: none;
         overflow: visible;
+        width: 100%;
 
         img {
           height: 50%;
