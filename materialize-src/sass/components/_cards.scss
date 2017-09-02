@@ -12,7 +12,7 @@
 .card {
   height: 500px;
   width: 500px;
-  padding: $card-padding;
+  padding: 75px;
   align-self: center;
   position: aboslute;
   margin: $element-top-margin 0 $element-bottom-margin 0;
@@ -52,23 +52,26 @@
       right: 0;
     }
   }
-  &.customHeader{
-    width: 250px;
-    height: 8px;
-    margin-top: 55px;
-    margin-bottom: 5px;
-    background-color: #5F605F;
-  }
+
   &.custom {
+    padding-top: 200px;
     height: 400px;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: #67C4AB;
+    background-color: #2C3E4F;
+  }
+
+  &.custom2 {
+    margin-top: 20px;
+    margin-left: 5px;
+    position: absolute;
+    padding-top: 5px;
+    height: 50px;
+    width: 250px;
   }
 
   &.small {
-    height: 400px;
+    height: 100%;
     width: 100%;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -218,3 +221,21 @@
   }
 }
 
+.customHeader{
+  width: 250px;
+  height: 50px;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  background-color: #2C3E4F;
+  border-radius: 2px;
+  @extend .z-depth-2;
+}
+.custom {
+  height: 50px;
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #2C3E4F;
+  border-radius: 2px;
+  @extend .z-depth-2;
+}

@@ -508,7 +508,7 @@ td, th{
       // Don't style circles inside preloader classes.
       &:not(.circle-clipper) > .circle,
       :not(.circle-clipper) > .circle {
-        position: absolute;
+        position: relative;
         width: 42px;
         height: 42px;
         overflow: hidden;
@@ -521,7 +521,7 @@ td, th{
         line-height: 42px;
         color: #fff;
         background-color: #999;
-        text-align: center;
+        text-align: left;
       }
 
 
@@ -771,4 +771,8 @@ td, th{
 .licenter{
   display: inline;
   float: none;
+}
+
+.NombUsuario{
+  string: x;
 }

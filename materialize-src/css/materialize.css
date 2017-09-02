@@ -2007,7 +2007,7 @@ a {
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
-.z-depth-2, .card, .tabs {
+.z-depth-2, .card, .customHeader, .custom, .tabs {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
 .z-depth-3, .collapsible {
@@ -2321,7 +2321,7 @@ td, th {
       position: relative; }
       .collection .collection-item.avatar:not(.circle-clipper) > .circle,
       .collection .collection-item.avatar :not(.circle-clipper) > .circle {
-        position: absolute;
+        position: relative;
         width: 42px;
         height: 42px;
         overflow: hidden;
@@ -2333,7 +2333,7 @@ td, th {
         line-height: 42px;
         color: #fff;
         background-color: #999;
-        text-align: center; }
+        text-align: left; }
       .collection .collection-item.avatar .title {
         font-size: 16px; }
       .collection .collection-item.avatar p {
@@ -2497,6 +2497,9 @@ input[type=range] + .thumb {
 .licenter {
   display: inline;
   float: none; }
+
+.NombUsuario {
+  string: x; }
 
 span.badge {
   min-width: 3rem;
@@ -3429,7 +3432,7 @@ small {
 
 .card-panel {
   transition: box-shadow .25s;
-  padding: 50px;
+  padding: 25px;
   margin: 13.33333rem 0 26.66667rem 0;
   border-radius: 2px;
   background-color: #fff; }
@@ -3437,7 +3440,7 @@ small {
 .card {
   height: 500px;
   width: 500px;
-  padding: 50px;
+  padding: 75px;
   align-self: center;
   position: aboslute;
   margin: 13.33333rem 0 26.66667rem 0;
@@ -3464,20 +3467,21 @@ small {
       bottom: 0;
       left: 0;
       right: 0; }
-  .card.customHeader {
-    width: 250px;
-    height: 8px;
-    margin-top: 55px;
-    margin-bottom: 5px;
-    background-color: #5F605F; }
   .card.custom {
+    padding-top: 200px;
     height: 400px;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: #67C4AB; }
+    background-color: #2C3E4F; }
+  .card.custom2 {
+    margin-top: 20px;
+    margin-left: 5px;
+    position: absolute;
+    padding-top: 5px;
+    height: 50px;
+    width: 250px; }
   .card.small {
-    height: 400px;
+    height: 100%;
     width: 100%;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -3530,9 +3534,9 @@ small {
       bottom: 0;
       left: 0;
       max-width: 100%;
-      padding: 50px; }
+      padding: 25px; }
   .card .card-content {
-    padding: 50px;
+    padding: 25px;
     border-radius: 0 0 2px 2px; }
     .card .card-content p {
       margin: 0;
@@ -3547,18 +3551,18 @@ small {
     position: relative;
     background-color: inherit;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 16px 50px; }
+    padding: 16px 25px; }
     .card .card-action:last-child {
       border-radius: 0 0 2px 2px; }
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
       color: #ffab40;
-      margin-right: 50px;
+      margin-right: 25px;
       transition: color .3s ease;
       text-transform: uppercase; }
       .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
         color: #ffd8a6; }
   .card .card-reveal {
-    padding: 50px;
+    padding: 25px;
     position: absolute;
     background-color: #fff;
     width: 100%;
@@ -3571,6 +3575,22 @@ small {
     .card .card-reveal .card-title {
       cursor: pointer;
       display: block; }
+
+.customHeader {
+  width: 250px;
+  height: 50px;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  background-color: #2C3E4F;
+  border-radius: 2px; }
+
+.custom {
+  height: 50px;
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #2C3E4F;
+  border-radius: 2px; }
 
 #toast-container {
   display: block;

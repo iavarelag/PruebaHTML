@@ -1,22 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Registrar Colegios</title>
+    <meta charset="UTF-8"/>
+    <meta name="layout" />
+    <title>AyudingaCORE</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/fa8f1e845c.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <style type="text/css">
+        html {
+            background: url("../imgs/ACArtboard%201sitelogo2.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
 </head>
-<body>
-<h2>Registrar Colegio</h2>
-
-<br/>
-<br/>
-<br/>
-
-<form method="post" action="registrarseccion.html">
-    Nombre del colegio :<input type="Text" name="nombreColegio"><br>
-    Dirección:<input type="Text" name="direccion"><br>
-    Teléfono :<input type="Text" name="telefono"><br>
-    horario de atencion :<input type="Text" name="horario"><br>
-    <input type="Submit" name="enviar" value="Aceptar información">
-</form>
+<body class="bg" style="alignment: center;">
+<!-- Aqui Inicia el HEADER-->
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper" class="z-depth-5">
+                <a href="!" class="brand-logo">
+                    <img src="../imgs/logoArtboard%202mt.png"></a>
+                <a href="!" class="brand-logo.center">
+                    <img class="right-align hide-on-med-and-down" src="../imgs/navbarlogin-01.png" width="300" height="130">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="!">AyudingaCore</a></li>
+                    <li><a href="!">Ayudinga</a></li>
+                    <li><a href="!">Iniciar Sesion</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="!">AyudingaCore</a></li>
+                    <li><a href="!">Ayudinga</a></li>
+                    <li><a href="!">Iniciar Sesion</a></li>
+                </ul>
+            </div>
+            <div class="nav-content" style="align-content: center">
+                <ul class="tabs tabs-transparent tabs-fixed-width">
+                    <li class="tab"><a class="FloatMenu" href="#test1">Inicio</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test2">Mensajeria</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test3">Colegios</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test4">Grados</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test5">Secciones</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test6">Perfiles</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Aqui Termina el HEADER-->
+<div class="container">
+    <div class="customHeader">
+    </div>
+    <div class="card small">
+        <h4>Registrar Colegio</h4>
+            <form class="col s12 input" method="post" action="registrarseccion.html">
+            <div class="input-field col s6">
+            <input placeholder="Nombre de Colegio" type="Text" id="nombrecolegio" name="nombrecolegio">
+            </div>
+            <div class="input-field col s6">
+                <input placeholder="Dirección" type="Text" id="direccion" name="direccion">
+            </div>
+            <div class="input-field col s2">
+                <input placeholder="Telefono" type="Text" id="telefono">
+            </div>
+            <div class="input-field col s2">
+                <input placeholder="Horario" type="Text" id="horario" name="horario">
+            </div>
+            <input type="Submit" name="enviar" value="Aceptar información">
+        </form>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
