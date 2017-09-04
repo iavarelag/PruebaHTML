@@ -16,14 +16,14 @@ select {
 
 .input-field {
   & > select {
-    display: block;
+    display: inline-block;
     position: absolute;
-    width: 0;
+    width: 100%;
     pointer-events: none;
-    height: 0;
-    top: 0;
-    left: 0;
-    opacity: 0;
+    height: 100%;
+    top: 5px;
+    left: 0px;
+    opacity: 5px;
   }
 }
 
