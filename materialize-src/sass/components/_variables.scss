@@ -240,14 +240,14 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
 // 14. Navigation Bar
 // ==========================================================================
 
-$navbar-height: 130px !default;
+$navbar-height: 90px !default;
 $navbar-line-height: $navbar-height !default;
-$navbar-height-mobile: 100px !default;
+$navbar-height-mobile: 90px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1rem !default;
 $navbar-font-color: #000000 !default;
 $navbar-brand-font-size: 2.1rem !default;
-$navbar-padding: 20px !default;
+$navbar-padding: 5px !default;
 
 // 15. Side Navigation
 // ==========================================================================

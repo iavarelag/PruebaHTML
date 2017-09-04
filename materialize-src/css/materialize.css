@@ -2001,10 +2001,12 @@ a {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .side-nav {
+.z-depth-1, nav, .card-panel, .toast, .btn, .btn-large,
+.btn-custom, .btn-floating, .dropdown-content, .side-nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 
-.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
+.z-depth-1-half, .btn:hover, .btn-large:hover,
+.btn-custom:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
 .z-depth-2, .card, .customHeader, .custom, .tabs {
@@ -2547,7 +2549,7 @@ nav ul a span.badge {
 
 .container {
   margin: auto;
-  max-width: 1280px;
+  max-width: 980px;
   width: 90%;
   position: relative;
   display: inline-block; }
@@ -3125,19 +3127,19 @@ nav {
   color: #000000;
   background-color: #FFFFFF;
   width: 100%;
-  height: 100px;
-  line-height: 100px; }
+  height: 90px;
+  line-height: 90px; }
   nav.nav-extended {
-    min-height: 100px; }
+    min-height: 90px; }
     nav.nav-extended .nav-wrapper {
-      min-height: 100px;
-      height: auto;
-      padding: 20px;
-      position: relative; }
+      min-height: 90px;
+      height: 90px;
+      position: relative;
+      align-items: center; }
     nav.nav-extended .nav-content {
       position: absolute;
       line-height: normal;
-      height: 120px; }
+      height: 190px; }
   nav a {
     color: #000000; }
   nav i,
@@ -3145,8 +3147,8 @@ nav {
   nav i.material-icons {
     display: block;
     font-size: 24px;
-    height: 100px;
-    line-height: 100px; }
+    height: 90px;
+    line-height: 90px; }
   nav .nav-wrapper {
     position: relative;
     height: 100%; }
@@ -3157,17 +3159,17 @@ nav {
     float: left;
     position: relative;
     z-index: 1;
-    height: 100px;
+    height: 90px;
     margin: 0 18px; }
     nav .button-collapse i {
-      height: 100px;
-      line-height: 100px; }
+      height: 90px;
+      line-height: 90px; }
   nav .brand-logo {
     position: relative;
     color: #000000;
     display: inline-block;
     font-size: 2.1rem;
-    padding: 50px; }
+    padding: 5px; }
     nav .brand-logo.center {
       left: -50%;
       transform: translateX(-50%); }
@@ -3248,21 +3250,21 @@ nav {
 
 .navbar-fixed {
   position: relative;
-  height: 100px;
+  height: 90px;
   z-index: 997; }
   .navbar-fixed nav {
     position: fixed; }
 
 @media only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
-    min-height: 130px; }
+    min-height: 90px; }
 
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 130px;
-    line-height: 130px; }
+    height: 90px;
+    line-height: 90px; }
 
   .navbar-fixed {
-    height: 130px; } }
+    height: 90px; } }
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
@@ -3477,9 +3479,10 @@ small {
     margin-top: 20px;
     margin-left: 5px;
     position: absolute;
-    padding-top: 5px;
-    height: 50px;
-    width: 250px; }
+    padding: 10px;
+    height: 90px;
+    width: 250px;
+    display: inline-block; }
   .card.small {
     height: 100%;
     width: 100%;
@@ -3688,7 +3691,7 @@ small {
       overflow: hidden;
       transition: color .28s ease; }
       .tabs .tab a:hover, .tabs .tab a.active {
-        background-color: #F79320;
+        background-color: #2C91BA;
         color: #FFFFFF; }
     .tabs .tab.disabled a, .tabs .tab.disabled a:hover {
       color: rgba(255, 255, 255, 0.7);
@@ -3764,7 +3767,8 @@ small {
 [disabled].btn-large,
 .btn-floating[disabled],
 .btn-large[disabled],
-.btn-flat[disabled] {
+.btn-flat[disabled],
+.btn-custom[disabled] {
   pointer-events: none;
   background-color: #DFDFDF !important;
   box-shadow: none;
@@ -3783,17 +3787,20 @@ small {
   [disabled].btn-large:hover,
   .btn-floating[disabled]:hover,
   .btn-large[disabled]:hover,
-  .btn-flat[disabled]:hover {
+  .btn-flat[disabled]:hover,
+  .btn-custom[disabled]:hover {
     background-color: #DFDFDF !important;
     color: #9F9F9F !important; }
 
 .btn, .btn-large,
+.btn-custom,
 .btn-floating,
 .btn-large,
 .btn-flat {
   font-size: 1rem;
   outline: 0; }
   .btn i, .btn-large i,
+  .btn-custom i,
   .btn-floating i,
   .btn-large i,
   .btn-flat i {
@@ -3804,7 +3811,8 @@ small {
 .btn-floating:focus {
   background-color: #0a2ffe; }
 
-.btn, .btn-large {
+.btn, .btn-large,
+.btn-custom {
   text-decoration: none;
   color: #fff;
   background-color: #3d5afe;
@@ -3812,7 +3820,8 @@ small {
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer; }
-  .btn:hover, .btn-large:hover {
+  .btn:hover, .btn-large:hover,
+  .btn-custom:hover {
     background-color: #5670fe; }
 
 .btn-floating {
@@ -3934,17 +3943,22 @@ button.btn-floating {
     border-radius: 50%;
     transform: scale(0); }
 
-.btn-flat {
+.btn-flat,
+.btn-custom {
   box-shadow: none;
-  background-color: transparent;
+  background-color: #FFFFFF;
   color: #343434;
   cursor: pointer;
   transition: background-color .2s; }
-  .btn-flat:focus, .btn-flat:hover {
+  .btn-flat:focus, .btn-flat:hover,
+  .btn-custom:focus,
+  .btn-custom:hover {
     box-shadow: none; }
-  .btn-flat:focus {
+  .btn-flat:focus,
+  .btn-custom:focus {
     background-color: rgba(0, 0, 0, 0.1); }
-  .btn-flat.disabled {
+  .btn-flat.disabled,
+  .btn-custom.disabled {
     background-color: transparent !important;
     color: #b3b3b3 !important;
     cursor: default; }
@@ -3957,6 +3971,22 @@ button.btn-floating {
 
 .btn-block {
   display: block; }
+
+.btnn {
+  border: none;
+  width: auto;
+  border-radius: 5px;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 2rem;
+  text-transform: capitalize;
+  vertical-align: middle;
+  position: relative;
+  background-color: #FFFFFF;
+  margin-top: 150px;
+  margin-left: -117px;
+  -webkit-tap-highlight-color: transparent; }
 
 .dropdown-content {
   background-color: #fff;
@@ -4189,7 +4219,8 @@ button.btn-floating {
   display: none;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: #FFFFFF; }
 
 .side-nav .collapsible,
 .side-nav.fixed .collapsible {

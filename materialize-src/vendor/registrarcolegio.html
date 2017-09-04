@@ -22,6 +22,7 @@
         }
         body {
             display: flex;
+            min-height: 100vh;
             flex-direction: column;
         }
         main {
@@ -39,7 +40,7 @@
                 <a href="!" class="brand-logo">
                     <img src="../imgs/logoArtboard%202mt.png"></a>
                 <a href="!" class="brand-logo.center">
-                    <img class="right-align hide-on-med-and-down" src="../imgs/navbarlogin-01.png" width="300" height="130">
+                    <img class="right-align hide-on-med-and-down" src="../imgs/navbarlogin-01.png" width="auto" height="90">
                 </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -55,7 +56,7 @@
             </div>
             <div class="nav-content" style="align-content: center">
                 <ul class="tabs tabs-transparent tabs-fixed-width">
-                    <li class="tab"><a class="FloatMenu" href="#test1">Inicio</a></li>
+                    <li class="tab"><a class="FloatMenu" href="../DAshboardVendedores.html">Inicio</a></li>
                     <li class="tab"><a class="FloatMenu" href="#test2">Mensajeria</a></li>
                     <li class="tab"><a class="FloatMenu" href="#test3">Colegios</a></li>
                     <li class="tab"><a class="FloatMenu" href="#test4">Grados</a></li>
@@ -68,8 +69,6 @@
 </header>
 <!-- Aqui Termina el HEADER-->
 <div class="container">
-    <div class="customHeader">
-    </div>
     <div class="card small">
         <h4>Registrar Colegio</h4>
             <form class="col s12 input" method="post" action="registrarseccion.html">
@@ -85,11 +84,50 @@
             <div class="input-field col s2">
                 <input placeholder="Horario" type="Text" id="horario" name="horario">
             </div>
-            <input type="Submit" name="enviar" value="Aceptar información">
+                <button class="btn waves-effect waves-light" type="submit" name="enviar">Aceptar Informacion<i class="material-icons right">send</i>
+                </button>
         </form>
         </div>
-    </div>
 </div>
 </body>
+<footer class="page-footer">
+    <div class="left-footer">
+        <table>
+            <tr>
+                <td><a class="grey-text text-lighten-3" href="#!">Prensa</a></td>
+                <td><a class="grey-text text-lighten-3" href="#!">Donar</a></td>
+            </tr>
+            <tr>
+                <td><a class="grey-text text-lighten-3" href="#!">Blog</a></td>
+                <td><a class="grey-text text-lighten-3" href="#!">Preguntas Frecuentes(FAQ)</a></td>
+                <td><a href="#!"> <i class="fa fa-facebook" aria-hidden="true"></i></a></td>
+                <td><a href="#!"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+                <td><a href="#!"> <i class="fa fa-snapchat-square" aria-hidden="true"></i></a></td>
+                <td><a href="#!"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a></td>
+            </tr>
+            <tr>
+                <td><a class="grey-text text-lighten-3" href="#!">Contacto</a></td>
+                <td><a class="grey-text text-lighten-3" href="#!">Patrocinadores</a></td>
+            </tr>
+            <tr>
+                <td><a class="grey-text text-lighten-3" href="#!">Ubicacion</a></td>
+            </tr>
+        </table>
+    </div>
 
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large white">
+            <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <a class="grey-text text-lighten-4 center" href="!">© 2014 Copyright Text</a>
+    </div>
+</footer>
 </html>

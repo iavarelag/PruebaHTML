@@ -4,15 +4,15 @@ nav {
 
     .nav-wrapper {
       min-height: $navbar-height-mobile;
-      height: auto;
-      padding: $navbar-padding;
+      height: 90px;
       position: relative;
+      align-items: center;
     }
 
     .nav-content {
       position: absolute;
       line-height: normal;
-      height: 120px;
+      height: 190px;
     }
   }
 
@@ -65,7 +65,7 @@ nav {
     color: $navbar-font-color;
     display: inline-block;
     font-size: $navbar-brand-font-size;
-    padding: 50px;
+    padding: 5px;
 
 
     &.center {
