@@ -2203,22 +2203,25 @@ ul.staggered-list li {
     text-align: center; } }
 
 .page-footer {
+  align-items: center;
   padding-top: 10px;
-  display: inline;
+  display: inline-block;
   padding-bottom: 0px;
   margin-bottom: 0px;
   color: black;
-  background-color: #263238;
+  background-color: #2C3E4F;
   height: 140px; }
   .page-footer .footer-copyright {
+    width: 100%;
     overflow: hidden;
-    min-height: 20px;
-    display: block;
+    height: 35px;
+    line-height: 10px;
+    display: inline-block;
+    text-align: center;
     align-items: center;
     padding-top: 0px;
-    padding-left: 50%;
     color: rgba(255, 255, 255, 0.8);
-    background-color: #263238; }
+    background-color: #2C3E4F; }
 
 table, th, td {
   border: none; }
@@ -2503,6 +2506,31 @@ input[type=range] + .thumb {
 .NombUsuario {
   string: x; }
 
+.FloatDiv {
+  padding-top: 50px;
+  text-align: center;
+  display: block;
+  float: left;
+  width: 33%;
+  height: 120px;
+  margin: 1px; }
+
+.FloatDiv2 {
+  display: block;
+  float: left;
+  width: 16%;
+  height: 120px;
+  margin: 5px; }
+
+.FloatDiv3 {
+  padding-top: 20px;
+  text-align: center;
+  display: block;
+  float: left;
+  width: 33%;
+  height: 120px;
+  margin: 1px; }
+
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -2549,6 +2577,7 @@ nav ul a span.badge {
 
 .container {
   margin: auto;
+  border: 1px;
   max-width: 980px;
   width: 90%;
   position: relative;
@@ -3985,7 +4014,7 @@ button.btn-floating {
   position: relative;
   background-color: #FFFFFF;
   margin-top: 150px;
-  margin-left: -117px;
+  margin-left: -110px;
   -webkit-tap-highlight-color: transparent; }
 
 .dropdown-content {

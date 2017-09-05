@@ -337,8 +337,9 @@ ul.staggered-list li {
 
 // Footer
 .page-footer {
+  align-items: center;
   padding-top: 10px;
-  display: inline;
+  display: inline-block;
   padding-bottom: 0px;
   margin-bottom: 0px;
   color: $footer-font-color;
@@ -346,12 +347,14 @@ ul.staggered-list li {
   height:140px;
 
   .footer-copyright {
+    width: 100%;
     overflow: hidden;
-    min-height: 20px;
-    display: block;
+    height: 35px;
+    line-height: 10px;
+    display: inline-block;
+    text-align: center;
     align-items: center;
     padding-top: 0px;
-    padding-left: 50%;
     color: $footer-copyright-font-color;
     background-color: $footer-copyright-bg-color;
     @extend .light;
@@ -775,4 +778,30 @@ td, th{
 
 .NombUsuario{
   string: x;
+}
+
+.FloatDiv{
+  padding-top: 50px;
+  text-align: center;
+  display: block;
+  float: left;
+  width: 33%;
+  height: 120px;
+  margin: 1px;
+}
+.FloatDiv2{
+  display: block;
+  float: left;
+  width: 16%;
+  height: 120px;
+  margin: 5px;
+}
+.FloatDiv3{
+  padding-top: 20px;
+  text-align: center;
+  display: block;
+  float: left;
+  width: 33%;
+  height: 120px;
+  margin: 1px;
 }
