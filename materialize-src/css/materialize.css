@@ -4404,7 +4404,7 @@ textarea.materialize-textarea {
   height: 3rem;
   width: 100%;
   font-size: 1rem;
-  margin: 0 0 20px 0;
+  margin: 20px;
   padding: 0;
   box-shadow: none;
   box-sizing: content-box;
@@ -4698,7 +4698,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 
 .input-field {
   position: relative;
-  margin-top: 1rem; }
+  margin-top: 2rem; }
   .input-field.inline {
     display: inline-block;
     vertical-align: middle;
@@ -5149,6 +5149,7 @@ select {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   padding: 5px;
+  margin-top: 5px;
   border: 1px solid #f2f2f2;
   border-radius: 2px;
   height: 3rem; }

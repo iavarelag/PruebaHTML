@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8"/>
     <meta name="layout" />
     <title>AyudingaCORE</title>
 
 
     <script src="js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $('select').material_select();
         });
     </script>
     <script src="https://use.fontawesome.com/fa8f1e845c.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel = "stylesheet"
+          href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet"
+          href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+            src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/materialize.css">
@@ -38,10 +46,9 @@
         }
     </style>
 
-=======
     <meta charset="UTF-8">
     <title>Registrar Secciones</title>
->>>>>>> b6b948dda2ed6210e478ac949a51627b0c5cfe74
+
 </head>
 <body class="bg" style="alignment: center;">
 <!-- Aqui Inicia el HEADER-->
@@ -83,28 +90,32 @@
 <div class="container">
     <div class="card small">
         <h4>Crear Seccion</h4>
+
         <form class="col s12 input" method="post" action="registrarseccion.html">
-            <div class="input-field col s6">
-                <input class="select-wrapper">
-                    <select class="initialized">
-                        <option value="" disabled selected>Choose your option</option>
+            <div id="select">
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Elegir Colegio</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
                     </select>
-                    <label>Materialize Select</label>
-                </input>
+                    <label>Colegio</label>
+                </div>
+            </div>
 
-<<<<<<< HEAD
-            </div>
-            <div class="input-field col s6">
-                <input placeholder="Dirección" type="Text" id="direccion" name="direccion">
-            </div>
-            <div class="input-field col s2">
-                <input placeholder="Telefono" type="Text" id="telefono">
-            </div>
-            <div class="input-field col s2">
-                <input placeholder="Horario" type="Text" id="horario" name="horario">
+            <div class="input-field col">
+                <select multiple>
+                    <option value="" disabled selected>Elegir Secciones</option>
+                    <option value="1">Maternal</option>
+                    <option value="2">Pre-kinder</option>
+                    <option value="3">Kinder</option>
+                    <option value="4">Primaria</option>
+                    <option value="5">Secundaria</option>
+                    <option value="6">Pre-Media</option>
+                    <option value="7">Media</option>
+                </select>
+                <label>Secciones</label>
             </div>
             <button class="btn waves-effect waves-light" type="submit" name="enviar">Aceptar Informacion<i class="material-icons right">send</i>
             </button>
@@ -119,7 +130,7 @@
 
 
 
->>>>>>> b6b948dda2ed6210e478ac949a51627b0c5cfe74
+
 </body>
 <footer class="page-footer">
     <div class="left-footer">
@@ -161,4 +172,6 @@
         <a class="grey-text text-lighten-4 center" href="!">© 2014 Copyright Text</a>
     </div>
 </footer>
+
+
 </html>
