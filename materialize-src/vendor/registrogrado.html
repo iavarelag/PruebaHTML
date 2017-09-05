@@ -1,39 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta name="layout" />
+    <title>AyudingaCORE</title>
+
+
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
+    <script src="https://use.fontawesome.com/fa8f1e845c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel = "stylesheet"
+          href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet"
+          href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+            src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <style type="text/css">
+        html {
+            background: url("../imgs/ACArtboard%201sitelogo2.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
 </head>
+
+
+
+
+
 <body>
-<form class="" method="post" action="registrogrado.html">
-    <h2>Creacion de Grados</h2>
-    <br/>
-    Seccion asignada:
-    <select>
-        <option value="" disabled selected> Eliga la Seccion</option>
-        <option value="1">PreMedia</option>
-        <option value="2">Media</option>
-    </select>
-    <br/>
-    <select>
-        <option value="" disabled selected> Grados</option>
-        <option value="1">7mo</option>
-        <option value="2">8vo</option>
-        <option value="3">9no</option>
-    </select>
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper" class="z-depth-5">
+                <a href="!" class="brand-logo">
+                    <img src="../imgs/logoArtboard%202mt.png"></a>
+                <a href="!" class="brand-logo.center">
+                    <img class="right-align hide-on-med-and-down" src="../imgs/navbarlogin-01.png" width="auto" height="90">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="!">AyudingaCore</a></li>
+                    <li><a href="!">Ayudinga</a></li>
+                    <li><a href="!">Iniciar Sesion</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="!">AyudingaCore</a></li>
+                    <li><a href="!">Ayudinga</a></li>
+                    <li><a href="!">Iniciar Sesion</a></li>
+                </ul>
+            </div>
+            <div class="nav-content" style="align-content: center">
+                <ul class="tabs tabs-transparent tabs-fixed-width">
+                    <li class="tab"><a class="FloatMenu" href="../DAshboardVendedores.html">Inicio</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test2">Mensajeria</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test3">Colegios</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test4">Grados</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test5">Secciones</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test6">Perfiles</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="card small">
+            <h4>Creación de Grados</h4>
+                <form class="" method="post" action="registrogrado.html">
+                    <div class="input-field">
+                        <select>
+                            <option value="" disabled selected>Eliga Colegio</option>
+                            <option value="1">PreMedia</option>
+                            <option value="2">Media</option>
+                        </select>
+                        <label>Colegio</label>
+                    </div>
+                    <div class="input-field">
+                        <select multiple>
+                            <option value="" disabled selected>Elegir Sección</option>
+                            <option value="1">Maternal</option>
+                            <option value="2">Pre-kinder</option>
+                            <option value="3">Kinder</option>
+                            <option value="4">Primaria</option>
+                            <option value="5">Secundaria</option>
+                            <option value="6">Pre-Media</option>
+                            <option value="7">Media</option>
+                        </select>
+                    <label>Sección</label>
+                    </div>
+                    <select>
+                        <option value="" disabled selected> Grados</option>
+                        <option value="1">7mo</option>
+                        <option value="2">8vo</option>
+                        <option value="3">9no</option>
+                    </select>
 
 
-    <br/>
-    <input placeholder="Detalles del Grado" type="Text" id="desc" name="desc">
-    <br/>
+                    <br/>
+                    <input placeholder="Detalles del Grado" type="Text" id="desc" name="desc">
+                    <br/>
 
-    <button class="btn waves-effect waves-light" type="submit" name="enviar">Registrar Grado
-    </button>
-</form>
-<form class="" method="post" action="registroseccion.html">
-    <br/>
-    <button class="btn waves-effect waves-light" type="submit" name="enviar1">Registrar Grado y Volver A Abrir
-    </button>
-</form>
+                    <button class="btn waves-effect waves-light" type="submit" name="enviar">Registrar Grado
+                    </button>
+                </form>
+                <form class="" method="post" action="registroseccion.html">
+                    <br/>
+                    <button class="btn waves-effect waves-light" type="submit" name="enviar1">Registrar Grado y Volver A Abrir
+                    </button>
+                </form>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="FloatDiv2  hide-on-med-and-down">
+        <a class="grey-text text-lighten-3" href="#!">Prensa</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Donar</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Preguntas Frecuentes(FAQ)</a>
+    </div>
+    <div class="FloatDiv2  hide-on-med-and-down">
+        <a class="grey-text text-lighten-3" href="#!">Contacto</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Patrocinadores</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Ubicacion</a>
+    </div>
+    <div class="FloatDiv3">
+        <a class="brand-logo.center center-align">
+            <img src="../imgs/LogoAyudingaFooter.png" width="180" height="auto">
+        </a>
+    </div>
+    <div class="FloatDiv  hide-on-med-and-down">
+        <a href="#!"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href="#!"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+        <a href="#!"><i class="fa fa-snapchat-square fa-2x" aria-hidden="true"></i></a>
+        <a href="#!"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large white">
+            <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <p class="grey-text text-lighten-4 center" href="!">© 2014 Copyright Text</p>
+    </div>
+</footer>
 </body>
+
+
+
 </html>
