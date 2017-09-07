@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="layout" />
+    <title>AyudingaCORE</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/collapsible.js"></script>
+    <script src="https://use.fontawesome.com/fa8f1e845c.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style type="text/css">
+        html {
+            background: url("imgs/ACArtboard%201sitelogo2.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+
+        }
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
+</head>
+<body class="bg" style="alignment: center;">
+<!-- Aqui Inicia el HEADER-->
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper" class="z-depth-5">
+                <a class="brand-logo">
+                    <img src="imgs/LOGOAYUDINGA.svg" height="auto" width="150"></a>
+                <a class="brand-logo.center">
+                    <img class="hide-on-med-and-down" src="imgs/NAVBLUE.svg" width="auto" height="120">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="!">AyudingaCore</a></li>
+                    <li><a href="!">Ayudinga</a></li>
+                    <li><a href="!">Iniciar Sesion</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="!">AyudingaCore</a></li>
+                    <li><a href="!">Ayudinga</a></li>
+                    <li><a href="!">Iniciar Sesion</a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent tabs-fixed-width">
+                    <li class="tab"><a class="FloatMenu" href="#test1">Inicio</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test2">Mensajeria</a></li>
+                    <li class="tab"><a class="FloatMenu" href="vendor/registrarcolegio.html">Colegios</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test4">Grados</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test5">Secciones</a></li>
+                    <li class="tab"><a class="FloatMenu" href="#test6">Perfiles</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Aqui Termina el HEADER-->
+<div class="card horizontal custom">
+    <div class="collection-item avatar">
+        <img src="imgs/sergio.jpeg" class="circle">
+        <div class="card custom2">
+            <h5>Iskender Varela</h5>
+            <h6>Insituto Cultural de Panamá</h6>
+        </div>
+    </div>
+    <div>
+        <div class="btnn">Editar</div>
+    </div>
+</div>
+<div class="container">
+    <ul class="collapsible" data-collapsible="accordition" style="align-content: center">
+        <li>
+            <div class="collapsible-header active">
+                <i class="material-icons">account_box</i>
+                Informacion General
+                <span class="badge"></span></div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+    </ul>
+    <ul class="collapsible" data-collapsible="accordition" style="align-content: center">
+        <li>
+            <div class="collapsible-header active">
+                <i class="material-icons">announcement</i>
+                Notificaciones
+                <span class="badge"></span></div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+    </ul>
+    <ul class="collapsible" data-collapsible="expandible" style="align-content: center">
+        <li>
+            <div class="collapsible-header active">
+                <i class="material-icons">school</i>
+                Colegios
+                <span class="badge"></span></div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+    </ul>
+    <ul class="collapsible" data-collapsible="expandible" style="align-content: center">
+        <li>
+            <div class="collapsible-header active">
+                <i class="material-icons">people</i>
+                Perfiles
+                <span class="badge"></span></div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+    </ul>
+</div>
+</body>
+<footer class="page-footer">
+    <div class="FloatDiv2  hide-on-med-and-down">
+        <a class="grey-text text-lighten-3" href="#!">Prensa</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Donar</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Preguntas Frecuentes(FAQ)</a>
+    </div>
+    <div class="FloatDiv2  hide-on-med-and-down">
+        <a class="grey-text text-lighten-3" href="#!">Contacto</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Patrocinadores</a>
+        <br>
+        <a class="grey-text text-lighten-3" href="#!">Ubicacion</a>
+    </div>
+    <div class="FloatDiv3">
+        <a class="brand-logo.center center-align">
+            <img src="imgs/LOGOBLANCO.svg" width="180" height="auto">
+        </a>
+    </div>
+    <div class="FloatDiv  hide-on-med-and-down">
+        <a href="#!"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href="#!"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+        <a href="#!"><i class="fa fa-snapchat-square fa-2x" aria-hidden="true"></i></a>
+        <a href="#!"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large white">
+            <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <p class="grey-text text-lighten-4 center" href="!">© 2014 Copyright Text</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10488 -36 484.389 185.227">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #f7931e;
+      }
+
+      .cls-1 {
+        opacity: 0.4;
+      }
+
+      .cls-3 {
+        opacity: 0.6;
+      }
+
+      .cls-4 {
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <g id="Group_2381" data-name="Group 2381" transform="translate(9880 -36)">
+    <path id="Union_7" data-name="Union 7" class="cls-1" d="M217.389,185.227H185.227L0,0H57.162L242.389,185.227Z" transform="translate(850)"/>
+    <path id="Union_4" data-name="Union 4" class="cls-2" d="M217.389,185.227H185.227L0,0H57.162L242.389,185.227Z" transform="translate(670)"/>
+    <path id="Union_10" data-name="Union 10" class="cls-2" d="M217.389,185.227H185.227L0,0H57.162L242.389,185.227Z" transform="translate(608)"/>
+    <path id="Union_6" data-name="Union 6" class="cls-3" d="M217.389,185.227H185.227L0,0H57.162L242.389,185.227Z" transform="translate(790)"/>
+    <path id="Union_5" data-name="Union 5" class="cls-4" d="M217.389,185.227H185.227L0,0H57.162L242.389,185.227Z" transform="translate(730)"/>
+  </g>
+</svg>
